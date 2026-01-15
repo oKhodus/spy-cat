@@ -1,0 +1,70 @@
+{
+  "info": {
+    "name": "Spy Cat Agency API",
+    "description": "Postman collection for Spy Cat Agency backend endpoints",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "List Cats",
+      "request": { "method": "GET", "url": "http://127.0.0.1:8000/cats" }
+    },
+    {
+      "name": "Create Cat",
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:8000/cats",
+        "header": [{"key":"Content-Type","value":"application/json"}],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"name\":\"Whiskers\",\"experience_years\":3,\"breed\":\"Abyssinian\",\"salary\":5000}"
+        }
+      }
+    },
+    {
+      "name": "Update Cat Salary",
+      "request": {
+        "method": "PATCH",
+        "url": "http://127.0.0.1:8000/cats/1",
+        "header": [{"key":"Content-Type","value":"application/json"}],
+        "body": { "mode": "raw", "raw": "{\"salary\":6000}" }
+      }
+    },
+    {
+      "name": "Delete Cat",
+      "request": { "method": "DELETE", "url": "http://127.0.0.1:8000/cats/1" }
+    },
+    {
+      "name": "Create Mission",
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:8000/missions",
+        "header": [{"key":"Content-Type","value":"application/json"}],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"targets\":[{\"name\":\"Target1\",\"country\":\"USA\",\"notes\":\"\"}]}"
+        }
+      }
+    },
+    {
+      "name": "Assign Cat to Mission",
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:8000/missions/1/assign/1"
+      }
+    },
+    {
+      "name": "Update Target",
+      "request": {
+        "method": "PATCH",
+        "url": "http://127.0.0.1:8000/targets/1",
+        "header": [{"key":"Content-Type","value":"application/json"}],
+        "body": { "mode": "raw", "raw": "{\"notes\":\"Updated notes\",\"completed\":true}" }
+      }
+    },
+    {
+      "name": "Delete Mission",
+      "request": { "method": "DELETE", "url": "http://127.0.0.1:8000/missions/1" }
+    }
+  ]
+}
