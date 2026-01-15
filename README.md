@@ -28,19 +28,19 @@ The backend API allows:
 
 ```bash
 pip install -r requirements.txt
-
+```
 # Running the Backend
 
 1. Go to the backend folder:
 
 ```bash
 cd backend
-
+```
 ## Start the FastAPI server:
 
 ```bash
 uvicorn main:app --reload
-
+```
 ## Access the API at:
 
 http://127.0.0.1:8000
@@ -101,17 +101,17 @@ Supports:
 ## Navigate to the frontend folder:
 ```bash
 cd spy-cat-frontend
-
+```
 ## Install dependencies:
 
 ```bash
 npm install
-
+```
 ## Start the development server:
 
 ```bash
 npm run dev
-
+```
 ## Open the dashboard in your browser:
 
 http://localhost:3000
@@ -129,8 +129,6 @@ http://localhost:3000
         Experience and Salary must be positive
 
         Breed must be selected
-
-
 
 ## Project Structure
 
