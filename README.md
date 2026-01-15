@@ -131,7 +131,7 @@ http://localhost:3000
         Breed must be selected
 
 ## Project Structure
-
+```bash
 spy-cat/
 ├─ backend/
 │  ├─ main.py
@@ -146,3 +146,4 @@ spy-cat/
 │  ├─ package.json
 │  └─ ...
 └─ README.md
+```
